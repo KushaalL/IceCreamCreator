@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/main_radioGroupFlav"
+        android:orientation="horizontal"
+        android:layout_width="295dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="25dp"
+        android:baselineAligned="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_textViewQuestion">
+
+        <RadioButton
+            android:id="@+id/main_radioBChoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Chocolate" />
+
+        <RadioButton
+            android:id="@+id/main_radioBVan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Vanilla" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/main_imageViewFlav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_radioGroupFlav"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/main_textViewTitle"
+        android:layout_width="341dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="Make Your Favorite Ice Cream"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/main_textViewQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="What Flavor Do You Want?"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_textViewTitle" />
+
+    <Button
+        android:id="@+id/main_buttonNext"
+        android:layout_width="144dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="80dp"
+        android:text="Next"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_imageViewFlav" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
