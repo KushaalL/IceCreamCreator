@@ -12,7 +12,7 @@ import com.example.criticalquestionpractice.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
     String flavor = "";
-    static final String intentKey1 = "ABCD";
+    static final String intentKey1 = "Flavor";
     private ActivityMainBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -71,11 +71,11 @@
         android:id="@+id/main_buttonNext"
         android:layout_width="144dp"
         android:layout_height="66dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginBottom="30dp"
         android:text="Next"
         android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_imageViewFlav" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
